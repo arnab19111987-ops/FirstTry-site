@@ -1,25 +1,60 @@
-/* app/globals.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* dark-mode smoothing */
+/* dark-mode smoothing and gold-themed fonts */
 html {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-  background-color: #000;
+  background-color: #0a0a0a;
   color-scheme: dark;
+  font-feature-settings: "kern", "liga", "ss01", "ss02";
 }
 
-/* nicer inline code styling */
+/* Premium scrollbars */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(245, 230, 197, 0.3) transparent;
+}
+*::-webkit-scrollbar {
+  width: 6px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(245, 230, 197, 0.3);
+  border-radius: 3px;
+}
+*::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(245, 230, 197, 0.5);
+}
+
+/* gold-accented inline code styling */
 code {
-  border-radius: 0.25rem;
-  background-color: rgba(255, 255, 255, 0.1);
-  padding: 0.125rem 0.25rem;
-  font-size: 0.8em;
-  color: white;
+  border-radius: 0.375rem;
+  background-color: rgba(245, 230, 197, 0.1);
+  border: 1px solid rgba(245, 230, 197, 0.2);
+  padding: 0.125rem 0.375rem;
+  font-size: 0.85em;
+  color: #f5e6c5;
+  font-weight: 500;
 }
 pre code {
   background-color: transparent;
+  border: none;
   padding: 0;
+}
+
+/* Focus states with gold accent */
+input:focus,
+button:focus,
+textarea:focus {
+  outline: none;
+}
+
+/* Custom selection colors */
+::selection {
+  background: rgba(245, 230, 197, 0.2);
+  color: #f5e6c5;
 }
