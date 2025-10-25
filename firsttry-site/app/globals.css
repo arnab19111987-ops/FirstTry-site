@@ -3,6 +3,21 @@
 @tailwind utilities;
 
 /* Custom tweaks can go here */
+
+:root {
+  --font-geist-sans: system-ui, -apple-system, BlinkMacSystemFont, "Inter",
+    "Roboto", "Helvetica Neue", Arial, sans-serif;
+  --font-geist-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+/* tie Tailwind tokens to Next font vars */
+.font-sans {
+  font-family: var(--font-geist-sans);
+}
+
+.font-mono {
+  font-family: var(--font-geist-mono);
+}
 @import "tailwindcss";
 
 :root {
