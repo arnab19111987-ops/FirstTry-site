@@ -36,7 +36,9 @@ export default function FirstTryLandingPage() {
         </h1>
 
         <p className="mt-4 text-gray-400 text-lg max-w-2xl mx-auto leading-relaxed">
-          FirstTry runs every check your team cares about — tests, lint,
+          FirstTry is not “a nicer pre-commit hook.” It’s intelligent
+          pre-commit quality automation.
+          It runs every check your team cares about — tests, lint,
           security, Docker build, DB drift —{" "}
           <span className="text-white">locally</span> — before you commit.
           So your PR opens <span className="text-white">already green</span>.
@@ -110,6 +112,91 @@ export default function FirstTryLandingPage() {
             You look like the engineer who “never breaks the pipeline.”
             That reputation = promotion fuel.
           </p>
+        </div>
+      </section>
+
+      {/* STRATEGIC POSITIONING / DIFFERENTIATION */}
+      <section className="w-full max-w-5xl px-6 pb-24">
+        <div className="bg-[#0f0f0f] border border-[#2a2a2a] rounded-2xl p-6 md:p-10">
+          <div className="text-center max-w-3xl mx-auto">
+            <div className="text-[#facc15] font-semibold text-xs tracking-wide uppercase">
+              Why FirstTry actually matters
+            </div>
+
+            <h2 className="text-white text-2xl md:text-3xl font-semibold leading-tight mt-3">
+              Not “a better pre-commit hook.”
+              <br className="hidden md:block" />
+              A new layer of quality before code ever leaves your laptop.
+            </h2>
+
+            <p className="text-gray-400 text-sm md:text-base leading-relaxed mt-4">
+              The core idea is simple: stop shipping broken code. But the way we
+              get there is not simple. Pre-commit hooks are a commodity. Anyone
+              can run tests and lint. That’s not the game.
+              <br />
+              FirstTry is aiming at something bigger: intelligent, pre-commit
+              quality automation.
+            </p>
+          </div>
+
+          {/* 3 Pillars */}
+          <div className="mt-10 grid md:grid-cols-3 gap-6 text-left">
+            {/* Pillar 1 */}
+            <div className="bg-[#111] border border-[#2a2a2a] rounded-xl p-5">
+              <div className="text-[#facc15] text-xs font-semibold uppercase tracking-wide">
+                1. Mirror Mode
+              </div>
+              <div className="text-white font-medium text-lg leading-snug mt-2">
+                CI-to-local parity
+              </div>
+              <p className="text-gray-400 text-sm leading-relaxed mt-3">
+                Your local check actually matches what CI will do in GitHub
+                Actions. No “works on my machine,” no 20-minute surprise red
+                build. This is the wedge into teams and leadership.
+              </p>
+            </div>
+
+            {/* Pillar 2 */}
+            <div className="bg-[#111] border border-[#2a2a2a] rounded-xl p-5">
+              <div className="text-[#facc15] text-xs font-semibold uppercase tracking-wide">
+                2. AI Feedback
+              </div>
+              <div className="text-white font-medium text-lg leading-snug mt-2">
+                Fix it, don’t just flag it
+              </div>
+              <p className="text-gray-400 text-sm leading-relaxed mt-3">
+                Instead of “lint error, go figure it out,” FirstTry explains
+                exactly why this will break review or prod —
+                and suggests the smallest safe change. It’s signal, not noise.
+                This is what makes individual devs never want to code without it.
+              </p>
+            </div>
+
+            {/* Pillar 3 */}
+            <div className="bg-[#111] border border-[#2a2a2a] rounded-xl p-5">
+              <div className="text-[#facc15] text-xs font-semibold uppercase tracking-wide">
+                3. Blazing Speed
+              </div>
+              <div className="text-white font-medium text-lg leading-snug mt-2">
+                Under 1s or it doesn’t ship
+              </div>
+              <p className="text-gray-400 text-sm leading-relaxed mt-3">
+                This is the price of admission. If it’s slow, engineers turn it
+                off. FirstTry is built to feel instant in the terminal and in
+                your IDE — so it becomes habit, not ceremony.
+              </p>
+            </div>
+          </div>
+
+          {/* Category claim */}
+          <div className="mt-10 text-center max-w-2xl mx-auto">
+            <p className="text-gray-400 text-xs leading-relaxed">
+              If we hit all three, FirstTry stops being “a tool” and becomes
+              infrastructure for how code leaves a laptop. That’s a new
+              category. If we only copy existing linters and hooks, we lose to
+              free tools that teams already use.
+            </p>
+          </div>
         </div>
       </section>
 
